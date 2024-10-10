@@ -10,7 +10,7 @@ function ConnectButton() {
   return (
     <div className='m-2'>
         <AssetChainKit
-          metadata={{ name: "chimdi " }}
+          metadata={{ name: "Chimdi " }}
           infuraApiKey={INFURA_KEY}
           projectId={PROJECT_ID}
           defaultConnector={undefined}
