@@ -1,6 +1,5 @@
 "use client";
-
-import React from 'react'
+import React from 'react';
 import { INFURA_KEY, PROJECT_ID } from '@/configs';
 import { AssetChainKit, concatAddress, onCopy, useEvmWallet, useTonWallet } from 'assetchain-connect-test';
 
