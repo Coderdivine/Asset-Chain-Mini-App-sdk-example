@@ -1,6 +1,6 @@
 # Asset Chain Telegram Starter Kit Demo App 
 
-This is a sample app showing builders how to develop Telegram Mini Apps on Asset Chain; using the official Asset Chain [Telegram Starter Kit](https://github.com/xendfinance/assetchain-telegram-app-starter-kit)).
+This is a sample app showing builders how to develop Telegram Mini Apps on Asset Chain; using the official Asset Chain [Telegram Starter Kit](https://github.com/xendfinance/assetchain-telegram-app-starter-kit).
 
 ## Table of content
 - [Getting Started](https://github.com/xendfinance/assetchain-telegram-starterkit-demo-app#getting-started)
