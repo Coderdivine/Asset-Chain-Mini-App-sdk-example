@@ -1,6 +1,6 @@
 "use client";
 import ConnectButton from "@/pages/ConnectButton";
-import { TonConnectUIProvider } from "assetchain-connect-test";
+import { TonConnectUIProvider } from "assetchain-telegram-app-starter-kit";
 const manifestUrl = "https://api-staging.clanofraiders.com/tonconnect-manifest.json";
 
 export default function Home() {

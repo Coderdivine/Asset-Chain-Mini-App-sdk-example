@@ -8,7 +8,7 @@ import {
   useAssetChainConnect,
   useEvmWallet,
   useTonWallet,
-} from "assetchain-connect-test";
+} from "assetchain-telegram-app-starter-kit";
 
 function ConnectButton() {
   const evmWallet = {
@@ -108,13 +108,13 @@ function ConnectButton() {
             <h1 className="text-center mb-4 mt-4">Send Transaction (TON) </h1>
             <div className="">
               <input
-                className="bg-transparent border rounded-md py-2 px-10 mb-4 text-white"
+                className="bg-transparent border rounded-md mr-2 py-2 px-10 mb-4 text-white"
                 placeholder="Address"
                 onChange={(e) => setAddress(e.target.value)}
                 value={address}
               />
               <input
-                className="bg-transparent border rounded-md py-2 px-10 text-white"
+                className="bg-transparent border rounded-md mr-2 py-2 px-10 text-white"
                 placeholder="amount"
                 onChange={(e) => setAmount(e.target.value)}
                 value={amount}
