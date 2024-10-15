@@ -8,7 +8,7 @@ import {
   useAssetChainConnect,
   useEvmWallet,
   useTonWallet,
-} from "assetchain-connect-test";
+} from "assetchain-telegram-app-starter-kit";
 
 function ConnectButton() {
   const evmWallet = {
