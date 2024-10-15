@@ -14,7 +14,7 @@ function ConnectButton() {
   const evmWallet = {
     projectId: PROJECT_ID,
     infuraApiKey: INFURA_KEY,
-    metadata: { name: "Asset Chain test by Chimdi" },
+    metadata: { name: "Asset Chain" },
   };
   const [address, setAddress] = useState("");
   const [amount, setAmount] = useState("");
@@ -52,7 +52,7 @@ function ConnectButton() {
   return (
     <div className="m-2">
       <AssetChainKit
-        metadata={{ name: "Asset Chain test by Chimdi" }}
+        metadata={{ name: "Asset Chain" }}
         infuraApiKey={INFURA_KEY}
         projectId={PROJECT_ID}
         defaultConnector={undefined}
@@ -61,14 +61,14 @@ function ConnectButton() {
           {userFriendlyAddress ? (
             <button
               onClick={disconnectWallet}
-              className="px-7 py-2 mb-4 border rounded-md mx-2"
+              className="px-7 py-2 mb-4 border rounded-md mx-2 button-glow"
             >
               Disconnect TON
             </button>
           ) : (
             <button
               onClick={connectWallet}
-              className="flex px-7 py-2 mb-4 border rounded-md mx-2"
+              className="flex px-7 py-2 mb-4 border rounded-md mx-2 button-glow"
             >
               Connect TON wallet
             </button>
@@ -77,20 +77,22 @@ function ConnectButton() {
           {evmAddress ? (
             <button
               onClick={disconnectEvmWallet}
-              className="px-8 py-3 border rounded-md"
+              className="px-8 py-3 border rounded-md button-glow"
             >
               Disconnect Asset Chain
             </button>
           ) : (
             <button
               onClick={connectEvmWallet}
-              className="px-8 py-3 border rounded-md"
+              className="px-7 py-2 mb-4 border rounded-md button-glow"
             >
               Connect Asset Chain
             </button>
           )}
         </div>
-        <div className="text-center grid">
+
+
+        <div className="text-center mt-6 grid">
           {evmAddress && (
             <p onClick={() => onCopy(evmAddress)}>
               <span>Asset Chain:</span> {concatAddress(evmAddress)}{" "}
@@ -121,7 +123,7 @@ function ConnectButton() {
               />
               <button
                 onClick={sendTonTransaction}
-                className="bg-transparent border rounded-md py-2 px-10 mt-4 text-white"
+                className="button-glow border rounded-md py-2 px-10 mt-4 text-white"
               >
                 Send
               </button>

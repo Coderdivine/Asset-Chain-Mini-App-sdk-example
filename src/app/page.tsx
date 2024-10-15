@@ -6,7 +6,7 @@ const manifestUrl = "https://api-staging.clanofraiders.com/tonconnect-manifest.j
 export default function Home() {
 
   return (
-    <div className="grid mt-6 items-center font-[family-name:var(--font-geist-sans)]">
+    <div className="grid mt-6 items-center">
       <TonConnectUIProvider manifestUrl={manifestUrl}>
         <ConnectButton />
       </TonConnectUIProvider>
