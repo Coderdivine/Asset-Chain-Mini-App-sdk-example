@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { INFURA_KEY, PROJECT_ID } from "@/configs";
+import { INFURA_KEY, PROJECT_ID,  } from "@/configs";
 import {
   AssetChainKit,
   concatAddress,
@@ -8,13 +8,16 @@ import {
   useAssetChainConnect,
   useEvmWallet,
   useTonWallet,
+  configs
 } from "assetchain-telegram-app-starter-kit";
 
 function ConnectButton() {
+  const defaultNetwork = configs.AssetChainTestnet; // configs.AssetChainMainnet
   const evmWallet = {
     projectId: PROJECT_ID,
     infuraApiKey: INFURA_KEY,
     metadata: { name: "Asset Chain" },
+    network: defaultNetwork
   };
   const [address, setAddress] = useState("");
   const [amount, setAmount] = useState("");
@@ -56,6 +59,7 @@ function ConnectButton() {
         infuraApiKey={INFURA_KEY}
         projectId={PROJECT_ID}
         defaultConnector={undefined}
+        network={defaultNetwork}
       >
         <div className="flex justify-between mb-4">
           {userFriendlyAddress ? (
