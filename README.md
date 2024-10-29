@@ -20,14 +20,35 @@ git clone https://github.com/xendfinance/assetchain-telegram-starterkit-demo-app
 cd assetchain-telegram-starterkit-demo-app
 ```
 
-[Docs](https://www.npmjs.com/package/assetchain-telegram-app-starter-kit)
+---
 
+For further details and configuration tips, refer to the [AssetChain Telegram App Starter Kit Documentation](https://www.npmjs.com/package/assetchain-telegram-app-starter-kit).
 
-```
+### Troubleshooting WebSocket Connection Error
+
+When integrating with WalletConnect, you may encounter the following WebSocket error:
+
+```plaintext
 WebSocket connection to 'wss://relay.walletconnect.org/?auth=<auth-key>' failed:
 ```
 
-In case you encounter this error, use a VPN to bypass it.
+This error occurs when the WebSocket connection to WalletConnect's relay server cannot be established, often due to regional restrictions or network firewalls blocking access to `wss://relay.walletconnect.org`. To bypass this issue, it’s recommended to use a Virtual Private Network (VPN) to reroute your connection, which may allow you to connect without interference.
+
+**Steps to resolve:**
+1. Enable a VPN and select a region with unrestricted access to `cloud.reown.com` services.
+2. Retry the connection through your application to see if the issue is resolved.
+
+---
+
+---
+
+### Getting Started with Telegram Mini Apps
+
+To start building a Telegram Mini App:
+
+- **Read the Docs**: Visit the [Telegram Mini Apps Guide](https://core.telegram.org/bots/webapps#initializing-mini-apps) for steps to set up and initialize your app.
+
+--- 
 
 ## Contributing
 
